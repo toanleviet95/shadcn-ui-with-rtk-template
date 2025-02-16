@@ -12,8 +12,30 @@ This template provides a minimal setup to get React working in Vite with HMR and
 [![Redux Toolkit][shields-redux-domain]](https://redux-toolkit.js.org/) </br>
 [![Shadcn/ui][shields-shadcn-domain]](https://ui.shadcn.com/) </br>
 
+## How to install
+
+Required: Node version >=20.18.0 and [Yarn](https://yarnpkg.com/) was installed
+
+
+```
+yarn install
+```
+
+## How to run
+
+```
+yarn dev
+```
+
+## How to build
+
+```
+yarn build
+```
+
 ## Folder Structure
 
+```
 📦 my-app
 ├── 📂 public
 │   ├── favicon.ico
@@ -57,6 +79,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 ├── package.json
 ├── vite.config.ts
 
+```
 
 ## UI Kit & Icons
 

@@ -9,7 +9,7 @@ export const userApi = api.injectEndpoints({
     }),
     getUserById: builder.query<User, string>({
       query: (id) => `/users/${id}`,
-      providesTags: (result, error, id) => [{ type: 'User', id }],
+      providesTags: (_, __, id) => [{ type: 'User', id }],
     }),
     createUser: builder.mutation<User, Partial<User>>({
       query: (newUser) => ({
@@ -25,7 +25,7 @@ export const userApi = api.injectEndpoints({
         method: 'PUT',
         body: data,
       }),
-      invalidatesTags: (result, error, { id }) => [{ type: 'User', id }],
+      invalidatesTags: (_, __, { id }) => [{ type: 'User', id }],
     }),
     deleteUser: builder.mutation<void, string>({
       query: (id) => ({
