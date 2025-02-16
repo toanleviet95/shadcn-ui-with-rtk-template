@@ -1,4 +1,4 @@
-# React 19 + TypeScript + Vite + Redux Toolkit Template
+# React 19 + TypeScript + Vite + Shadcn/ui + Redux Toolkit Template
 
 ## About
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -6,7 +6,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 ## Tech Stack
 
 [![Vite][shields-vite-domain]](https://vitejs.dev/) </br>
-[![React][shields-react-domain]](https://react.dev/) v19 </br>
+[![React][shields-react-domain]](https://react.dev/) - version 19 </br>
 [![TypeScript][shields-typescript-domain]](https://www.typescriptlang.org/) </br>
 [![React Router][shields-react-router-domain]](https://reactrouter.com/) </br>
 [![Redux Toolkit][shields-redux-domain]](https://redux-toolkit.js.org/) </br>
@@ -85,7 +85,8 @@ yarn build
 
 ### UI Kit
 
-Shadcn/ui collection built with tailwindcss and [Radix UI](https://www.radix-ui.com/): https://ui.shadcn.com
+[Shadcn/ui](https://ui.shadcn.com) collection built with [Tailwindcss](https://tailwindcss.com) and [Radix UI](https://www.radix-ui.com/)
+
 Taiwindcss v4: https://tailwindcss.com
 
 ### Icon Kit
