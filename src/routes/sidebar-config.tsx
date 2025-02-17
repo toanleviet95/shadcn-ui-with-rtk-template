@@ -1,78 +1,32 @@
 
 import {
   BookOpen,
-  Bot,
+  File,
   Settings2,
-  SquareTerminal,
+  FolderSearch2
 } from "lucide-react"
 
 export default [
   {
-    title: "Playground",
-    url: "#",
-    icon: SquareTerminal,
-    isActive: true,
-    items: [
-      {
-        title: "History",
-        url: "#",
-      },
-      {
-        title: "Starred",
-        url: "#",
-      },
-      {
-        title: "Settings",
-        url: "#",
-      },
-    ],
+    title: "Files",
+    url: "files",
+    icon: File,
   },
   {
-    title: "Models",
-    url: "#",
-    icon: Bot,
-    items: [
-      {
-        title: "Genesis",
-        url: "#",
-      },
-      {
-        title: "Explorer",
-        url: "#",
-      },
-      {
-        title: "Quantum",
-        url: "#",
-      },
-    ],
+    title: "Projects",
+    url: "projects",
+    icon: FolderSearch2,
   },
   {
-    title: "Documentation",
-    url: "#",
+    title: "Knowledge",
+    url: "knowledge",
     icon: BookOpen,
-    items: [
-      {
-        title: "Introduction",
-        url: "#",
-      },
-      {
-        title: "Get Started",
-        url: "#",
-      },
-      {
-        title: "Tutorials",
-        url: "#",
-      },
-      {
-        title: "Changelog",
-        url: "#",
-      },
-    ],
   },
   {
     title: "Settings",
     url: "#",
     icon: Settings2,
+    isActive: true,
     items: [
       {
         title: "General",

@@ -28,27 +28,27 @@ const user = {
 };
 
 // This is sample data.
-const teams = [
+const products = [
   {
-    name: "Acme Inc",
+    name: "FED",
     logo: GalleryVerticalEnd,
-    plan: "Enterprise",
+    plan: "Internal Management",
   },
   {
-    name: "Acme Corp.",
+    name: "Athena",
     logo: AudioWaveform,
-    plan: "Startup",
+    plan: "Internal Management",
   },
   {
-    name: "Evil Corp.",
+    name: "Rica",
     logo: Command,
-    plan: "Free",
+    plan: "Internal Management",
   },
 ];
 
 const data = {
   user, 
-  teams,
+  products,
   sideBarConfig: SideBarConfig
 }
 
@@ -56,7 +56,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
-        <TeamSwitcher teams={data.teams} />
+        <TeamSwitcher teams={data.products} />
       </SidebarHeader>
       <SidebarContent>
         <NavMain items={data.sideBarConfig} />
