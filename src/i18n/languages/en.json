@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "files": "Files",
+    "projects": "Projects",
+    "knowledge": "Knowledge",
+    "settings": "Settings"
+  },
+  "settings": {
+    "general": "General",
+    "team": "Team",
+    "billing": "Billing",
+    "limits": "Limits"
+  }
+}

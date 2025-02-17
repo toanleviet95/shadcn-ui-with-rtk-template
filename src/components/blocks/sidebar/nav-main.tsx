@@ -33,9 +33,9 @@ function MenuItem({
     return (
       <SidebarMenuItem>
         <Link to={data.url}>
-          <SidebarMenuButton tooltip={data.title}>
+          <SidebarMenuButton tooltip={data.title()}>
             {data.icon && <data.icon />}
-            <span>{data.title}</span>
+            <span>{data.title()}</span>
           </SidebarMenuButton>
         </Link>
       </SidebarMenuItem>
@@ -49,19 +49,19 @@ function MenuItem({
     >
       <SidebarMenuItem>
         <CollapsibleTrigger asChild>
-          <SidebarMenuButton tooltip={data.title}>
+          <SidebarMenuButton tooltip={data.title()}>
             {data.icon && <data.icon />}
-            <span>{data.title}</span>
+            <span>{data.title()}</span>
             <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
           </SidebarMenuButton>
         </CollapsibleTrigger>
         <CollapsibleContent>
           <SidebarMenuSub>
             {data.items?.map((subItem) => (
-              <SidebarMenuSubItem key={subItem.title}>
+              <SidebarMenuSubItem key={subItem.title()}>
                 <SidebarMenuSubButton asChild>
                   <Link to={subItem.url}>
-                    <span>{subItem.title}</span>
+                    <span>{subItem.title()}</span>
                   </Link>
                 </SidebarMenuSubButton>
               </SidebarMenuSubItem>
@@ -78,7 +78,7 @@ export function NavMain({
   items,
 }: {
   items: {
-    title: string
+    title: () => ''
     url: string
     icon?: LucideIcon
     isActive?: boolean
@@ -92,7 +92,7 @@ export function NavMain({
     <SidebarGroup>
       <SidebarMenu>
         {items.map((item) => (
-          <MenuItem key={item.title} data={item} />
+          <MenuItem key={item.title()} data={item} />
         ))}
       </SidebarMenu>
     </SidebarGroup>

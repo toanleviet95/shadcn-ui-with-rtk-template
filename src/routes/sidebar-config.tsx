@@ -6,44 +6,47 @@ import {
   FolderSearch2
 } from "lucide-react"
 
+import i18n from "@/i18n/i18n"; 
+
 export default [
   {
-    title: "Files",
+    title: () => i18n.t("nav.files"),
     url: "files",
     icon: File,
   },
   {
-    title: "Projects",
+    title: () => i18n.t("nav.projects"),
     url: "projects",
     icon: FolderSearch2,
   },
   {
-    title: "Knowledge",
+    title: () => i18n.t("nav.knowledge"),
     url: "knowledge",
     icon: BookOpen,
   },
   {
-    title: "Settings",
+    title: () => i18n.t("nav.settings"),
     url: "#",
     icon: Settings2,
     isActive: true,
     items: [
       {
-        title: "General",
+        title: () => i18n.t("settings.general"),
         url: "#",
       },
       {
-        title: "Team",
+        title: () => i18n.t("settings.team"),
         url: "#",
       },
       {
-        title: "Billing",
+        title: () => i18n.t("settings.billing"),
         url: "#",
       },
       {
-        title: "Limits",
+        title: () => i18n.t("settings.limits"),
         url: "#",
       },
     ],
   },
 ];
+
