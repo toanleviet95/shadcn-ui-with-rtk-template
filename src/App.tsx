@@ -1,14 +1,18 @@
-import { BrowserRouter } from 'react-router';
-import { Provider } from 'react-redux';
+import { BrowserRouter } from 'react-router'
+import { Provider } from 'react-redux'
+import { MsalProvider } from "@azure/msal-react"
 import ConfiguredRoutes from '@/routes'
 import { store } from '@/app/store'
-import "./i18n/i18n.ts";
+import { msalInstance } from "@/lib/msal/auth.ts"
+import "@/i18n/i18n.ts";
 
 function App() {
   return (
     <BrowserRouter>
       <Provider store={store}>
-        <ConfiguredRoutes />
+        <MsalProvider instance={msalInstance}>
+          <ConfiguredRoutes />
+        </MsalProvider>
       </Provider>
     </BrowserRouter>
   )
