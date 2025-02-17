@@ -59,6 +59,10 @@ yarn build
 │   ├── 📂 components
 │   │   ├── 📂 blocks           # Your own block components  
 │   │   ├── 📂 ui               # All shared shadcn/ui components
+│   ├── 📂 layout
+│   │   ├── DashboardLayout.tsx # Layout for authenticated users
+│   │   ├── AuthLayout.tsx      # Layout for auth pages (login, register)
+│   │   ├── MainLayout.tsx      # Default layout
 │   ├── 📂 pages
 │   │   ├── Home.tsx
 │   │   ├── Login.tsx
@@ -68,8 +72,23 @@ yarn build
 │   ├── 📂 lib
 │   │   ├── axios.ts            # Axios instance (if needed)
 │   │   ├── shadcn.ts           # Theme provider for shadcn/ui
-│   ├── 📂 styles
-│   │   ├── globals.css
+│   ├── 📂 assets
+│   │   ├── images              # Folder for static images
+│   │   ├── icons               # Folder for SVG/icons
+│   │   ├── fonts               # Custom fonts
+│   │   ├── global.css          # Global CSS (if needed)
+│   ├── 📂 types
+│   │   ├── index.ts            # Re-export global types
+│   │   ├── auth.ts             # Auth-related types
+│   │   ├── user.ts             # User-related types
+│   ├── 📂 hooks
+│   │   ├── useAuth.ts          # Custom hook for authentication
+│   │   ├── useBreadcrumb.ts    # Custom hook for dynamic breadcrumbs
+│   │   ├── useFetch.ts         # Custom fetch hook (if needed)
+│   ├── 📂 constants
+│   │   ├── routes.ts           # Route paths constants
+│   │   ├── api.ts              # API endpoints constants
+│   │   ├── roles.ts            # User roles/constants
 │   ├── main.tsx
 │   ├── App.tsx
 ├── 📦 node_modules
