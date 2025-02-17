@@ -1,3 +1,5 @@
+// Below code is only using for example
+
 import { api } from '@/app/api';
 
 export const authApi = api.injectEndpoints({

@@ -1,3 +1,5 @@
+// Below code is only using for example
+
 import { useAppSelector } from '@/app/hooks';
 import { useGetUsersQuery, useCreateUserMutation, useDeleteUserMutation } from '../user-api';
 import { selectUsers } from '../user-slice';

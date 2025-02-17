@@ -1,5 +1,7 @@
 "use client"
 
+import { useGetAccountMeQuery, useGetAccountPhotoQuery } from "@/features/account/account-api";
+
 import {
   BadgeCheck,
   Bell,
@@ -38,6 +40,9 @@ export function NavUser({
   }
 }) {
   const { isMobile } = useSidebar()
+  const { data: accountMe, error: meError, isLoading: isMeLoading } = useGetAccountMeQuery();
+  const { data: accountPhoto, error: photoError, isLoading: isPhotoLoading } = useGetAccountPhotoQuery();
+  
 
   return (
     <SidebarMenu>

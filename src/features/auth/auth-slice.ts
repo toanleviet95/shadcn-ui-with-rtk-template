@@ -1,3 +1,5 @@
+// Below code is only using for example
+
 import { createSlice } from '@reduxjs/toolkit';
 
 interface AuthState {

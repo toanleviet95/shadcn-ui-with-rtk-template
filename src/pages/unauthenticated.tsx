@@ -4,12 +4,9 @@ import { loginRequest } from "@/lib/msal/authConfig.ts";
 
 export default function Unauthenticated() {
   const { instance } = useMsal();
-  const initializeSignIn = () => {
-    instance.loginRedirect(loginRequest);
-  };
   
   useEffect(() => {
-    initializeSignIn();
+    instance.loginRedirect(loginRequest);
   }, []);
   
   return <></>;

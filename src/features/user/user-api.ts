@@ -1,3 +1,5 @@
+// Below code is only using for example
+
 import { api } from '@/app/api';
 import { User } from '@/types/User'
 
